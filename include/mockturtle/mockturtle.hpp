@@ -122,7 +122,6 @@
 #include "mockturtle/algorithms/satlut_mapping.hpp"
 #include "mockturtle/algorithms/sim_resub.hpp"
 #include "mockturtle/algorithms/simulation.hpp"
-#include "mockturtle/algorithms/window_rewriting.hpp"
 #include "mockturtle/algorithms/xag_optimization.hpp"
 #include "mockturtle/algorithms/xag_resub_withDC.hpp"
 #include "mockturtle/algorithms/xmg_algebraic_rewriting.hpp"

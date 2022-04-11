@@ -15,25 +15,6 @@ optimization.
 
 [Read the full documentation.](http://mockturtle.readthedocs.io/en/latest/?badge=latest)
 
-## Example
-
-The following code snippet reads an AIG from an Aiger file, enumerates all cuts
-and prints them for each node.
-
-```c++
-#include <mockturtle/mockturtle.hpp>
-#include <lorina/aiger.hpp>
-
-mockturtle::aig_network aig;
-auto const result = lorina::read_aiger( "file.aig", mockturtle::aiger_reader( aig ) );
-assert( result == lorina::return_code::success );
-
-auto const cuts = cut_enumeration( aig );
-aig.foreach_node( [&]( auto node ) {
-  std::cout << cuts.cuts( aig.node_to_index( node ) ) << "\n";
-} );
-```
-
 ## Installation requirements
 
 A modern compiler is required to build *mockturtle*.  We are continously
@@ -43,3 +24,11 @@ found in the [documentation](http://mockturtle.readthedocs.io/en/latest/installa
 ## EPFL logic sythesis libraries
 
 mockturtle is part of the [EPFL logic synthesis](https://lsi.epfl.ch/page-138455-en.html) libraries.  The other libraries and several examples on how to use and integrate the libraries can be found in the [logic synthesis tool showcase](https://github.com/lsils/lstools-showcase).
+
+## Run experiments
+
+```
+makedir build && cd build
+cmake -DMOCKTURTLE_EXPERIMENTS=ON ..
+make
+```
