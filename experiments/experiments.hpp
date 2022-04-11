@@ -430,7 +430,9 @@ static constexpr uint64_t c6288           = 0b0000000100000000000000000000000000
 static constexpr uint64_t c7552           = 0b0000001000000000000000000000000000000000000000000000000000000000;
 static constexpr uint64_t iscas           = 0b0000001111111111100000000000000000000000000000000000000000000000;
 
-static constexpr uint64_t all             = 0b0000001111111111111111111111111111111111111111111111111111111111;
+static constexpr uint64_t mtm             = 0b0001110000000000000000000000000000000000000000000000000000000000;
+
+static constexpr uint64_t all             = 0b0001111111111111111111111111111111111111111111111111111111111111;
 // clang-format on
 
 static const char* benchmarks[] = {
@@ -442,7 +444,9 @@ static const char* benchmarks[] = {
     "simple_spi", "spi", "ss_pcm", "systemcaes", "systemcdes", "tv80", "usb_funct", "usb_phy",
     "vga_lcd", "wb_conmax",
 
-    "c17", "c432", "c499", "c880", "c1355", "c1908", "c2670", "c3540", "c5315", "c6288", "c7552"};
+    "c17", "c432", "c499", "c880", "c1355", "c1908", "c2670", "c3540", "c5315", "c6288", "c7552", 
+    
+    "sixteen", "twentythree", "twenty"};
 
 std::vector<std::string> epfl_benchmarks( uint64_t selection = epfl )
 {
@@ -483,10 +487,23 @@ std::vector<std::string> iscas_benchmarks( uint64_t selection = iscas )
   return result;
 }
 
+std::vector<std::string> mtm_benchmarks( uint64_t selection = mtm )
+{
+  std::vector<std::string> result;
+  for ( uint32_t i = 58u; i < 61u; ++i )
+  {
+    if ( ( selection >> i ) & 1 )
+    {
+      result.push_back( benchmarks[i] );
+    }
+  }
+  return result;
+}
+
 std::vector<std::string> all_benchmarks( uint64_t selection = all )
 {
   std::vector<std::string> result;
-  for ( uint32_t i = 0u; i < 58u; ++i )
+  for ( uint32_t i = 0u; i < 61u; ++i )
   {
     if ( ( selection >> i ) & 1 )
     {

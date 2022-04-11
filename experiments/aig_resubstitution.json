@@ -874,140 +874,140 @@
       {
         "benchmark": "adder",
         "equivalent": true,
-        "runtime": 0.047545645385980606,
+        "runtime": 0.023029325529932976,
         "size_after": 893,
         "size_before": 1020
       },
       {
         "benchmark": "bar",
         "equivalent": true,
-        "runtime": 0.1739838719367981,
+        "runtime": 0.07855000346899033,
         "size_after": 3336,
         "size_before": 3336
       },
       {
         "benchmark": "div",
         "equivalent": true,
-        "runtime": 5.079889297485352,
+        "runtime": 2.131072521209717,
         "size_after": 52305,
         "size_before": 57247
       },
       {
         "benchmark": "hyp",
         "equivalent": true,
-        "runtime": 12.696895599365234,
+        "runtime": 6.031382083892822,
         "size_after": 208375,
         "size_before": 214335
       },
       {
         "benchmark": "log2",
         "equivalent": true,
-        "runtime": 1.6220272779464722,
+        "runtime": 1.3096058368682861,
         "size_after": 32012,
         "size_before": 32060
       },
       {
         "benchmark": "max",
         "equivalent": true,
-        "runtime": 0.06292973458766937,
+        "runtime": 0.053562600165605545,
         "size_after": 2865,
         "size_before": 2865
       },
       {
         "benchmark": "multiplier",
         "equivalent": true,
-        "runtime": 1.3845082521438599,
+        "runtime": 1.1218347549438477,
         "size_after": 26971,
         "size_before": 27062
       },
       {
         "benchmark": "sin",
         "equivalent": true,
-        "runtime": 0.3921284079551697,
+        "runtime": 0.2503269910812378,
         "size_after": 5375,
         "size_before": 5416
       },
       {
         "benchmark": "sqrt",
         "equivalent": true,
-        "runtime": 2.030428647994995,
+        "runtime": 0.9907752275466919,
         "size_after": 20526,
         "size_before": 24618
       },
       {
         "benchmark": "square",
         "equivalent": true,
-        "runtime": 1.8136552572250366,
+        "runtime": 0.8202369809150696,
         "size_after": 18160,
         "size_before": 18484
       },
       {
         "benchmark": "arbiter",
         "equivalent": true,
-        "runtime": 1.0405155420303345,
+        "runtime": 0.480415940284729,
         "size_after": 11839,
         "size_before": 11839
       },
       {
         "benchmark": "cavlc",
         "equivalent": true,
-        "runtime": 0.1406911164522171,
+        "runtime": 0.062140148133039474,
         "size_after": 674,
         "size_before": 693
       },
       {
         "benchmark": "ctrl",
         "equivalent": true,
-        "runtime": 0.03574809804558754,
+        "runtime": 0.015311166644096375,
         "size_after": 108,
         "size_before": 174
       },
       {
         "benchmark": "dec",
         "equivalent": true,
-        "runtime": 0.06232637166976929,
+        "runtime": 0.03028150647878647,
         "size_after": 304,
         "size_before": 304
       },
       {
         "benchmark": "i2c",
         "equivalent": true,
-        "runtime": 0.08912438154220581,
+        "runtime": 0.0400216206908226,
         "size_after": 1241,
         "size_before": 1342
       },
       {
         "benchmark": "int2float",
         "equivalent": true,
-        "runtime": 0.025065064430236816,
+        "runtime": 0.012012748047709465,
         "size_after": 236,
         "size_before": 260
       },
       {
         "benchmark": "mem_ctrl",
         "equivalent": true,
-        "runtime": 3.5579569339752197,
+        "runtime": 1.662518858909607,
         "size_after": 46446,
         "size_before": 46836
       },
       {
         "benchmark": "priority",
         "equivalent": true,
-        "runtime": 0.06816761940717697,
+        "runtime": 0.033112429082393646,
         "size_after": 852,
         "size_before": 978
       },
       {
         "benchmark": "router",
         "equivalent": true,
-        "runtime": 0.010895887389779091,
+        "runtime": 0.006602316163480282,
         "size_after": 257,
         "size_before": 257
       },
       {
         "benchmark": "voter",
         "equivalent": true,
-        "runtime": 0.7346276640892029,
+        "runtime": 0.4477241337299347,
         "size_after": 10498,
         "size_before": 13758
       }

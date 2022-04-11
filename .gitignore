@@ -8,3 +8,6 @@ examples/
 
 docs/_build
 docs/doxyxml
+experiments/benchmarks/sixteen.aig
+experiments/benchmarks/twenty.aig
+experiments/benchmarks/twentythree.aig
